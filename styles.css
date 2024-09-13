@@ -35,6 +35,14 @@ h2 {
   padding: 5rem;
 }
 
+img {
+  width: 100%;
+  max-width: 500px;
+  margin: 1rem;
+  border-radius: 100px;
+  box-shadow: 0 0 10px 5px rgba(200, 17, 148, 0.1);
+}
+
 form {
   display: flex;
   flex-direction: column;
