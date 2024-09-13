@@ -5,18 +5,22 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  background-color: white;
+  font-family: 'Roboto', sans-ser;
+  background-image: url(bg.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
   color: hotpink;
   margin: 0;
   padding: 0;
   text-align: center;
-  margin-top: 10%;
+  margin-top: 4%;
 }
 
 h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
+  margin-bottom: 20%;
 }
 
 h2 {
@@ -27,19 +31,18 @@ h2 {
 .container {
   display: flex;
   flex-direction: column;
-  max-width: 800px;
+  max-width: 1200px;
   width: 100%;
   height: auto;
   align-items: center;
   margin: 0 auto;
-  border: hotpink 3px solid;
   border-radius: 50px;
   padding: 5rem;
 }
 
 img {
   width: 100%;
-  max-width: 500px;
+  max-width: 600px;
   margin: 1rem;
   border-radius: 100px;
   box-shadow: 0 0 10px 5px rgba(200, 17, 148, 0.1);
@@ -75,7 +78,7 @@ form {
   background-color: white;
   color: hotpink;
   font-weight: bold;
-  width: 80%;
+  width: 100%;
   font-size: 1rem;
 }
 
@@ -112,15 +115,14 @@ button:hover {
 #recipe {
   flex-wrap: wrap;
   justify-content: center;
-  border-left: 3px solid white;
   line-height: 2;
   padding: 2rem;
-  background-color: plum;
+  background-color: #E56191;
   color: white;
   border-radius: 50px;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 600;
-  box-shadow: 0 0 10px 5px rgba(223, 106, 190, 0.1);
+  box-shadow: 0 0 10px 5px rgba(232, 89, 192, 0.1);
   height: auto;
 }
 
@@ -154,19 +156,21 @@ footer {
   bottom: 0;
   width: 100%;
   padding: 1rem;
-  background-color: white;
+  background-image: url(bg.jpeg); 
   color: hotpink;
   font-weight: bold;
+  font-size: 1.2rem;
 }
 
 footer p {
   margin-top: 15px;
+  
 }
 
 footer a {
   color: hotpink;
   font-weight: bold;
-  background-color: black;
+  background-color: #1C340C;
   padding: 0.5rem;
   border-radius: 50px;
   text-decoration: none;
@@ -183,7 +187,6 @@ footer a:hover {
 
   form {
     width: 50%;
-
   }
 
   input {
@@ -196,10 +199,11 @@ footer a:hover {
 
   #recipe {
     padding: 2rem 1rem;
+    font-size: 1.2rem;
   }
 
   img {
-    max-width: 300px;
+    max-width: 400px;
   }
 
   h1 {
@@ -236,8 +240,7 @@ footer a:hover {
   }
 
   #recipe {
-    font-size: 1rem;
-
+    font-size: 1.3rem;
   }
 
   footer {
@@ -245,10 +248,10 @@ footer a:hover {
   }
 
   footer p {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   footer a {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 }
