@@ -1,41 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <div class="container">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="styles.css" />
+
     <title>Thai Recipes by AI 🤖</title>
   </head>
   <body>
-    <header>
-      <h1>Welcome to Thai Recipes 🍛</h1>
-      <h2>🤖 AI Generator</h2>
-    </header>
+    <div class="container">
+      <header>
+        <h1>Welcome to Thai Recipes 🍛</h1>
+        <h2>🤖 AI Generator</h2>
+      </header>
 
-    <main>
-        <form id="#recipe-form">
-          <label for="ingredients"
-            >Enter ingredients: 🌶️ 🐥 🐷 🐮 🦐 🐙 🦀 🥦</label
-          >
+      <main>
+        <form id="recipe-form">
+          <label for="recipe-name"> 👇🏻 Enter Thai dish: 🌶️ 🍜 🍛 🥗 </label>
           <div class="input">
             <input
               type="text"
-              id="ingredients"
-              name="ingredients"
-              placeholder="e.g. chicken, basil, chili"
+              id="recipe-name"
+              name="recipe-name"
+              placeholder="e.g. Pad Thai, Tom Yum etc."
               autofocus
               required
               autocomplete="off"
               class="prompt"
             />
-            <button type="submit" onclick="generateRecipe()">Recipe</button>
+            <input type="submit" class="submit" />
           </div>
         </form>
-        <div id="recipe"></div>
+        <div id="recipe" class="hidden"></div>
       </main>
-    <footer>
+      <footer>
         <p>
           Code by: Kunnikar Boonbunlu 👩🏻‍💻
           <a
@@ -44,8 +46,9 @@
             >View Source On GitHub</a
           >
         </p>
-    </footer>
-    <script src="script.js"></script>
+      </footer>
+
+      <script src="script.js"></script>
+    </div>
   </body>
-  </div>
 </html>
