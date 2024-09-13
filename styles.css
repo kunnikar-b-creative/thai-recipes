@@ -27,7 +27,7 @@ h2 {
 .container {
   display: flex;
   flex-direction: column;
-  max-width: 1000px;
+  max-width: 800px;
   align-items: center;
   margin: 0 auto;
   border: hotpink 3px solid;
@@ -45,6 +45,7 @@ form {
   border-radius: 50px;
   box-shadow: 0 0 10px 5px rgba(200, 17, 148, 0.1);
   margin-bottom: 30px;
+  min-width: 500px;
 }
 
 .input {
@@ -53,6 +54,7 @@ form {
   justify-content: center;
   align-items: center;
   margin: 1rem;
+  width: 100%;
 }
 
 .prompt {
@@ -63,7 +65,7 @@ form {
   background-color: white;
   color: hotpink;
   font-weight: bold;
-  width: 100%;
+  width: 80%;
   font-size: 1rem;
 }
 
@@ -80,7 +82,7 @@ label {
   font-weight: 800;
 }
 
-button {
+.submit {
   padding: 16px;
   font-size: 1rem;
   border-radius: 50px;
@@ -98,7 +100,7 @@ button:hover {
 }
 
 #recipe {
-  display: flex;
+  
   flex-wrap: wrap;
   justify-content: center;
   border-left: 3px solid white;
@@ -110,7 +112,32 @@ button:hover {
   font-size: 1rem;
   font-weight: 600;
   box-shadow: 0 0 10px 5px rgba(223, 106, 190, 0.1);
-  height: 50vh;
+  height: auto;
+}
+
+#recipe li {
+  list-style-type: none;
+  margin: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
 
 footer {
