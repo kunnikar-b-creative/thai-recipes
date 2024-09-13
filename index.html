@@ -13,24 +13,27 @@
     </header>
 
     <main>
-      <form action="">
-        <label for="ingredients">Enter ingredients:  🌶️ 🐥 🐷 🐮 🦐 🐙 🦀 🥦</label>
-        <input
-          type="text"
-          id="ingredients"
-          name="ingredients"
-          placeholder="e.g. chicken, basil, chili"
-          autofocus
-          required
-          autocomplete="off"
-          class="prompt"
-        />
-        <button type="submit" onclick="generateRecipe()">
-          Generate Recipe
-        </button>
+        <form action="">
+          <label for="ingredients"
+            >Enter ingredients: 🌶️ 🐥 🐷 🐮 🦐 🐙 🦀 🥦</label
+          >
+          <div class="input">
+            <input
+              type="text"
+              id="ingredients"
+              name="ingredients"
+              placeholder="e.g. chicken, basil, chili"
+              autofocus
+              required
+              autocomplete="off"
+              class="prompt"
+            />
+            <button type="submit" onclick="generateRecipe()">Recipe</button>
+          </div>
+        </form>
         <div id="recipe"></div>
-      </form>
-    </main>
+      </main>
+    
     </footer>
     <script src="script.js"></script>
   </body>
