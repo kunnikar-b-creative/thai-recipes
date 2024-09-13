@@ -12,3 +12,4 @@ function generateRecipe(event) {
 let recipeFormElement = document.querySelector('#recipe-form');
 recipeFormElement.addEventListener('submit', generateRecipe);
 
+
