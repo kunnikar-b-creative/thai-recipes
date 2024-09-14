@@ -60,7 +60,7 @@ form {
   border-radius: 50px;
   box-shadow: 0 0 10px 5px rgba(200, 17, 148, 0.1);
   margin-bottom: 10%;
-  min-width: 300px;
+  min-width: 400px;
 }
 
 .input {
@@ -189,11 +189,7 @@ footer a:hover {
     padding: 2rem;
   }
 
-  form {
-    width: 80%;
-    margin: 0, auto;
-  }
-
+  
   input {
     width: 100%;
   }
