@@ -12,7 +12,7 @@ function getRecipe(event) {
 
   let apiKey = '6654fa001cd5343d304f9bt068o34b25';
   let context =
-    'Focusing on user input form and straightforward responses. Provide concise answers. The recipe must be provided in HTML format. Example: <p>this is a recipe</p> but do not show the word HTML';
+    'Focusing on user input form and straightforward responses. Provide concise answers. The recipe measuring scale ingredients for cooking must be dl not cup and provided in HTML format. Example: <p>this is a recipe</p> but do not show the word HTML';
   let prompt = `Generate a Thai recipe for ${
     document.querySelector('#recipe-name').value
   }`;
