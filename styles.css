@@ -41,8 +41,8 @@ h2 {
 }
 
 img {
-  width: 80%;
-  max-width: 800px;
+  width: 100%;
+  max-width: 900px;
   margin: 0 auto;
   border-radius: 100px;
   box-shadow: 0 0 10px 5px rgba(200, 17, 148, 0.1);
@@ -54,7 +54,7 @@ form {
   flex-direction: column;
   margin-top: 1rem;
   background-color: pink;
-  max-width: 800px;
+  max-width: 900px;
   width: 100%;
   padding: 2rem;
   border-radius: 50px;
@@ -190,11 +190,12 @@ footer a:hover {
   }
 
   form {
-    width: 50%;
+    width: 80%;
+    margin: 0, auto;
   }
 
   input {
-    width: 80%;
+    width: 100%;
   }
 
   .submit {
@@ -203,7 +204,7 @@ footer a:hover {
 
   #recipe {
     padding: 2rem 1rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   img {
